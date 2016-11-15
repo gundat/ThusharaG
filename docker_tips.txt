@@ -1,0 +1,24 @@
+In powershell:
+
+docker run --name raster_tutorial -itp8889:8889 geohackweek2016/rastertutorial /bin/bash
+ls
+jupyter notebook --notebook-dir=/notebooks --ip='*' --port=8889 --no-browser
+in web browser --> http://localhost:8889
+docker run --name raster_t2 -itp8889:8889 geohackweek2016/rastertutorial /bin/bash
+
+gdalinfo --formats
+gdalinfo /data/landcover.tif
+docker stop $(docker ps -aq)
+docker rm $(docker ps -aq)
+
+to rename container:
+docker rename [container id] [new name] --OR--
+docker rename [old container name] [new name]
+
+if new name is "raster_con", then to reopen container once it's created:
+docker start -ai raster_con
+
+ctrl+c --> way to get back to command prompt after executing jupyter notebook
+
+vector tutorial: within container, have to "source activate vectorenv" and then execute jupyter notebook
+
