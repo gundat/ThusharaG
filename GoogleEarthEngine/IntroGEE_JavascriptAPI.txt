@@ -1,0 +1,1 @@
+my script from GEE intro lecture: https://code.earthengine.google.com/92739467064265776536351f91544bf2 

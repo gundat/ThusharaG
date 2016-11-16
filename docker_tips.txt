@@ -21,4 +21,15 @@ docker start -ai raster_con
 ctrl+c --> way to get back to command prompt after executing jupyter notebook
 
 vector tutorial: within container, have to "source activate vectorenv" and then execute jupyter notebook
+used localhost 8890 for vector container
+
+for GEE's docker:
+docker run -d -p 8888:8888 --name docker_cont geohackweek2016/docker-ee-datascience-notebook
+it spits out some 40 characters jibberish, that's your confirmation
+open web-browser and navigate to localhost:8888
+the "-d" run in the "daemon mode" i.e., in the background
+the "-p" still opens the port; the first set of #s can be a different port if 8888 is already used; 
+the second set of 4 #s has to be 8888 b/c that's what the image is continuing on
+
+
 
