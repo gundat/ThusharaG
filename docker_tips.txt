@@ -31,5 +31,7 @@ the "-d" run in the "daemon mode" i.e., in the background
 the "-p" still opens the port; the first set of #s can be a different port if 8888 is already used; 
 the second set of 4 #s has to be 8888 b/c that's what the image is continuing on
 
+open terminal within jupyter notebook to figure out what files are in the container: "ls"
+then "cd data" and "ls" to figure out 
 
 
